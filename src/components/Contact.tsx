@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { Mail, Instagram, ArrowUpRight, Send } from 'lucide-react';
 import { handleSpotlight } from '../lib/utils';

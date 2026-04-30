@@ -1,10 +1,10 @@
-import { useRef, useState, ReactNode } from 'react';
+import React, { useRef, useState, ReactNode, ButtonHTMLAttributes, MouseEvent } from 'react';
 import { motion, useSpring, useMotionValue, useTransform } from 'motion/react';
 
-interface MagneticButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+type MagneticButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
   className?: string;
-}
+};
 
 export function MagneticButton({ children, className, onClick, ...props }: MagneticButtonProps) {
   const ref = useRef<HTMLButtonElement>(null);
@@ -15,7 +15,7 @@ export function MagneticButton({ children, className, onClick, ...props }: Magne
   const springX = useSpring(x, springConfig);
   const springY = useSpring(y, springConfig);
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e: MouseEvent<HTMLButtonElement>) => {
     if (!ref.current) return;
     const { clientX, clientY } = e;
     const { left, top, width, height } = ref.current.getBoundingClientRect();

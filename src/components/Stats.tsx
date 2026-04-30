@@ -36,7 +36,7 @@ function AnimatedStat({
 }
 
 export function Stats() {
-  const stats = [
+  const stats: Array<{num: number, suffix: string, label: string, color: string, italic?: boolean}> = [
     {
       num: 100,
       suffix: "M+",
