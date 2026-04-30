@@ -31,7 +31,7 @@ export const THUMBNAILS = [
     title: 'The True Story Behind The Boarding School',
     category: 'Documentary',
     views: '1.9M+',
-    imageUrl: '/robin.jpg',
+    imageUrl: '/Robin Westman.jpg',
     featured: true,
   },
   {
