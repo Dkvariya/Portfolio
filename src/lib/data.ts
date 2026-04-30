@@ -20,7 +20,7 @@ export const THUMBNAILS = [
   },
   {
     id: 103,
-    title: 'CR7 - The True Cost of Greatness',
+    title: 'CR7',
     category: 'Documentary',
     views: '8.4M+',
     imageUrl: '/cr7.jpg',
@@ -31,12 +31,12 @@ export const THUMBNAILS = [
     title: 'The True Story Behind The Boarding School',
     category: 'Documentary',
     views: '1.9M+',
-    imageUrl: '/Robin Westman.jpg',
+    imageUrl: '/robin.jpg',
     featured: true,
   },
   {
     id: 105,
-    title: 'My Official Confession',
+    title: 'Official Confession',
     category: 'Documentary',
     views: '4.6M+',
     imageUrl: '/confession.jpg',
@@ -44,7 +44,7 @@ export const THUMBNAILS = [
   },
   {
     id: 201,
-    title: 'AI Tools 101 Build Your Stack Without Breaking the Bank',
+    title: 'AI Stack On Budget',
     category: 'Finance',
     views: '2.5M+',
     imageUrl: '/ai_tools.jpg',
@@ -52,7 +52,7 @@ export const THUMBNAILS = [
   },
   {
     id: 202,
-    title: 'Gambling',
+    title: "This Isn't Gambling?",
     category: 'Finance',
     views: '1.8M+',
     imageUrl: '/gambling.jpg',
@@ -60,7 +60,7 @@ export const THUMBNAILS = [
   },
   {
     id: 203,
-    title: 'How Shopify preorders turned a viral moment into $65,000 in revenue',
+    title: 'Revenue $65,000',
     category: 'Finance',
     views: '3.2M+',
     imageUrl: '/shopify.jpg',
@@ -68,7 +68,7 @@ export const THUMBNAILS = [
   },
   {
     id: 204,
-    title: 'The AI Search Takeover',
+    title: 'Rank #1 Everywhere',
     category: 'Finance',
     views: '4.1M+',
     imageUrl: '/ai_search.jpg',
@@ -76,7 +76,7 @@ export const THUMBNAILS = [
   },
   {
     id: 205,
-    title: 'The Knowledge Economy Is Over',
+    title: 'The Rise Of Allocation Economy.',
     category: 'Finance',
     views: '2.9M+',
     imageUrl: '/knowledge.jpg',
@@ -84,7 +84,7 @@ export const THUMBNAILS = [
   },
   {
     id: 206,
-    title: 'Webinar',
+    title: '$1 Webinar System',
     category: 'Finance',
     views: '1.1M+',
     imageUrl: '/webinar.jpg',
