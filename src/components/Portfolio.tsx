@@ -11,7 +11,7 @@ interface PortfolioProps {
 
 export function Portfolio({ onImageClick }: PortfolioProps) {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [visibleCount, setVisibleCount] = useState(8);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const filtered = THUMBNAILS.filter(t => activeCategory === 'All' || t.category === activeCategory);
   const visibleThumbnails = filtered.slice(0, visibleCount);
@@ -42,7 +42,7 @@ export function Portfolio({ onImageClick }: PortfolioProps) {
             key={category}
             onClick={() => {
               setActiveCategory(category);
-              setVisibleCount(6); // Reset visible count on filter change
+              setVisibleCount(12); // Reset visible count on filter change
             }}
             className={cn(
               "px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 relative overflow-hidden",
@@ -66,7 +66,7 @@ export function Portfolio({ onImageClick }: PortfolioProps) {
       {/* Grid */}
       <motion.div 
         layout
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6"
         style={{ perspective: '1000px' }}
       >
         <AnimatePresence mode="popLayout">
@@ -108,7 +108,7 @@ export function Portfolio({ onImageClick }: PortfolioProps) {
           viewport={{ once: true }}
         >
           <MagneticButton
-            onClick={() => setVisibleCount(p => p + 8)}
+            onClick={() => setVisibleCount(p => p + 12)}
             className="flex items-center space-x-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 hover:border-white/20 transition-all duration-300"
           >
             <div className="flex items-center space-x-2 pointer-events-none">
