@@ -1,45 +1,13 @@
 import { useState, useEffect } from 'react';
 
 // Common Unsplash images to represent diverse thumbnails
-export const THUMBNAILS = [
+export const THUMBNAILS: any[] = [
   {
-    id: 101,
-    title: 'The Real Squad Game.',
+    id: 1,
+    title: 'New Documentary',
     category: 'Documentary',
-    views: '5.2M+',
-    imageUrl: '/squid_game.jpg',
-    featured: true,
-  },
-  {
-    id: 102,
-    title: 'The Toxic Truth of the Medical Industry',
-    category: 'Documentary',
-    views: '3.1M+',
-    imageUrl: '/vaccine.jpg',
-    featured: true,
-  },
-  {
-    id: 103,
-    title: 'CR7 - The True Cost of Greatness',
-    category: 'Documentary',
-    views: '8.4M+',
-    imageUrl: '/cr7.jpg',
-    featured: true,
-  },
-  {
-    id: 104,
-    title: 'The True Story Behind The Boarding School',
-    category: 'Documentary',
-    views: '1.9M+',
-    imageUrl: '/robin.jpg',
-    featured: true,
-  },
-  {
-    id: 105,
-    title: 'My Official Confession',
-    category: 'Documentary',
-    views: '4.6M+',
-    imageUrl: '/confession.jpg',
+    views: '1.2M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=18-D_6vKI3QrKdXns4kBqhy-4ris6ovKQ&sz=w1200',
     featured: true,
   }
 ];
