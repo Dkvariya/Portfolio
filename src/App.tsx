@@ -16,7 +16,7 @@ export default function App() {
   const { scrollProgress } = useScroll();
 
   return (
-    <div className="bg-[#020205] text-white min-h-screen font-sans selection:bg-orange-600/30 selection:text-white">
+    <div className="bg-transparent text-white min-h-screen font-sans selection:bg-orange-600/30 selection:text-white">
       <BackgroundElements />
 
       {/* Progress Bar */}
