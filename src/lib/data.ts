@@ -97,6 +97,38 @@ export const THUMBNAILS: any[] = [
     views: '3.5M+',
     imageUrl: 'https://drive.google.com/thumbnail?id=1SIxXfaT4PGGa7snkoLJLjiQZxLJbEJOh&sz=w1200',
     featured: true,
+  },
+  {
+    id: 13,
+    title: 'Movie 1',
+    category: 'Movies',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1PM6ShZ3EW0dzHQcUWSELR6sPlWXa-mq6&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 14,
+    title: 'Movie 2',
+    category: 'Movies',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1Tlcq-9jxPpMziok26R8m_Lnkw4Ao2GBY&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 15,
+    title: 'Movie 3',
+    category: 'Movies',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1vJtxBryk1RjLbX3Pv6nixO5nHcWb0l1K&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 16,
+    title: 'Movie 4',
+    category: 'Movies',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1u9trqbhOz29-B5XAmupPdcF75u6z70q8&sz=w1200',
+    featured: true,
   }
 ];
 
