@@ -1,24 +1,37 @@
 import { motion } from 'motion/react';
 import { handleSpotlight } from '../lib/utils';
+import { Star } from 'lucide-react';
 
 const REVIEWS = [
   {
-    name: "Alex Becker",
-    role: "Finance Creator (1.2M Subs)",
-    content: "Dharmik completely transformed my channel. My CTR jumped from 4% to 11% in literally a week. Worth every penny.",
-    avatar: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=100&h=100&fit=crop"
+    name: "Pablo Castilla",
+    content: "Dharmik's work is very nice and aligned to our channel focus. Most importantly I really appreciate his effectiveness with quick responses and positive attitude!",
+    avatar: "https://drive.google.com/thumbnail?id=1lOzMTlSIhObtQ_dGm9_8b-Xa0wD3mOvs&sz=w200",
+    rating: 5
   },
   {
-    name: "Sarah Chen",
-    role: "Tech Documentary",
-    content: "The level of detail and understanding of human psychology in these designs is insane. Hooked 500k views on my last video.",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+    name: "Maria Fleimisch",
+    content: "It was great to work with Dharmik! He did a great job with thumbnails; is reliable, highly responsive and delivers on time. Will definitely want to work with him again. Thank you Dharmik and wishing you all the best.",
+    avatar: "https://drive.google.com/thumbnail?id=1ZqdO9s5uE4DlzYJSVv7I92wuoWU3u2iE&sz=w200",
+    rating: 5
   },
   {
-    name: "Mark V.",
-    role: "Gaming Channel",
-    content: "Fast turnaround and exactly the high-end gaming aesthetic I was looking for. The glow effects he does are top tier.",
-    avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop"
+    name: "Tobi Fayiga",
+    content: "Dharmik use of thumbnail art was crucial for my channel's success. Even when given little background on the topic and text for engagement, he continually showed good judgement and execution. Would definitely recommend for anyone looking to improve their click through rate and returning watchers to their channel.",
+    avatar: "https://drive.google.com/thumbnail?id=1fb7RTxqyyNU4ywPOSrPHqAVm2DrtlwSP&sz=w200",
+    rating: 5
+  },
+  {
+    name: "Adam Lach",
+    content: "Clear with his communication, takes feedback on board and also provides it. Very experienced and is a fantastic editor.",
+    avatar: "https://drive.google.com/thumbnail?id=1Qb-upgZBLcC5Q7MSfZ-0pZFa1ffNDhxM&sz=w200",
+    rating: 5
+  },
+  {
+    name: "Tin Dmitrovic",
+    content: "Dharmik is one of the best thumbnail designers that I had a chance to work with, his designs are flawless and his creative process is just 10/10 every single time. With his skills, you can be sure that you will never get low CTR on your thumbnails on YouTube, highly recommend him for everything around graphic designs and thumbnail design!",
+    avatar: "https://drive.google.com/thumbnail?id=1kLlpnJZjLzMectzVvStB_l-CpqifLrud&sz=w200",
+    rating: 5
   }
 ];
 
@@ -53,22 +66,34 @@ export function Testimonials() {
               onMouseMove={handleSpotlight}
               className="spotlight-card glass-card rounded-2xl p-8 flex flex-col relative group hover:border-orange-500/20 transition-colors duration-500 w-[320px] md:w-[400px] shrink-0 whitespace-normal"
             >
-               {/* Subtle quote mark */}
+             {/* Subtle quote mark */}
                <div className="absolute top-6 right-6 text-6xl font-serif text-white/5 group-hover:text-orange-500/10 transition-colors duration-500 leading-none">
                 "
                </div>
                
+               <div className="flex items-center gap-1 mb-4">
+                 {[...Array(review.rating)].map((_, index) => (
+                   <Star key={index} fill="currentColor" className="text-orange-500 w-5 h-5" />
+                 ))}
+                 <span className="ml-2 font-bold text-white tracking-wide text-lg">{review.rating}.0</span>
+               </div>
+
                <p className="text-slate-300 relative z-10 mb-8 italic flex-grow text-sm md:text-base">
                  "{review.content}"
                </p>
                
                <div className="flex items-center space-x-4 mt-auto">
-                 <div className="w-12 h-12 shrink-0 rounded-full overflow-hidden border border-white/10 ring-2 ring-orange-500/0 group-hover:ring-orange-500/30 transition-all duration-500">
-                   <img src={review.avatar} alt={review.name} className="w-full h-full object-cover" />
+                 <div className="w-12 h-12 shrink-0 rounded-full bg-orange-500/10 flex items-center justify-center overflow-hidden border border-white/10 ring-2 ring-orange-500/0 group-hover:ring-orange-500/30 transition-all duration-500">
+                   {review.avatar ? (
+                     <img src={review.avatar} alt={review.name} className="w-full h-full object-cover" />
+                   ) : (
+                     <span className="text-orange-400 font-bold text-lg uppercase">
+                       {review.name.charAt(0)}{review.name.split(' ')[1] ? review.name.split(' ')[1].charAt(0) : ''}
+                     </span>
+                   )}
                  </div>
                  <div>
                    <h4 className="text-white font-medium">{review.name}</h4>
-                   <p className="text-slate-500 text-sm">{review.role}</p>
                  </div>
                </div>
             </div>
