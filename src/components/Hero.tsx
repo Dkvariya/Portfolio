@@ -98,7 +98,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
           >
-            High-converting YouTube thumbnails designed to boost CTR and explode your views. 2.5+ years of craft focused on psychology and aesthetics.
+            High-converting YouTube thumbnails designed to boost CTR and explode your views. 3+ years of craft focused on psychology and aesthetics.
           </motion.p>
 
           {/* CTA Buttons */}

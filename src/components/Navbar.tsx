@@ -1,5 +1,5 @@
-import { motion, useScroll, useTransform } from 'motion/react';
-import { useState, useEffect } from 'react';
+import { motion, useScroll, useMotionValueEvent } from 'motion/react';
+import { useState } from 'react';
 import { cn } from '../lib/utils';
 import { Menu, X } from 'lucide-react';
 
@@ -8,13 +8,11 @@ export function Navbar({ activeTab = 'Home', setActiveTab }: { activeTab: string
   const [isScrolled, setIsScrolled] = useState(false);
   const navItems = ['Home', 'Portfolio', 'Contact'];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const { scrollY } = useScroll();
+  
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setIsScrolled(latest > 20);
+  });
 
   const handleNavClick = (item: string) => {
     setActiveTab(item);

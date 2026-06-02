@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, useScroll, useSpring } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Portfolio } from './components/Portfolio';
@@ -8,21 +9,26 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { BackgroundElements } from './components/BackgroundElements';
 import { ImageModal } from './components/ImageModal';
-import { useScroll } from './lib/data';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('Home');
   const [modalImage, setModalImage] = useState<string | null>(null);
-  const { scrollProgress } = useScroll();
+  
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
   return (
     <div className="bg-transparent text-white min-h-screen font-sans selection:bg-orange-600/30 selection:text-white">
       <BackgroundElements />
 
       {/* Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-orange-400 to-orange-600 z-50"
-        style={{ width: `${scrollProgress * 100}%` }}
+      <motion.div 
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-orange-400 to-orange-600 z-50 origin-left"
+        style={{ scaleX }}
       />
 
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />

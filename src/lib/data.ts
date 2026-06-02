@@ -111,7 +111,7 @@ export const THUMBNAILS: any[] = [
     title: 'Movie 2',
     category: 'Movies',
     views: '1M+',
-    imageUrl: 'https://drive.google.com/thumbnail?id=1Tlcq-9jxPpMziok26R8m_Lnkw4Ao2GBY&sz=w1200',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1vJtxBryk1RjLbX3Pv6nixO5nHcWb0l1K&sz=w1200',
     featured: true,
   },
   {
@@ -119,7 +119,7 @@ export const THUMBNAILS: any[] = [
     title: 'Movie 3',
     category: 'Movies',
     views: '1M+',
-    imageUrl: 'https://drive.google.com/thumbnail?id=1vJtxBryk1RjLbX3Pv6nixO5nHcWb0l1K&sz=w1200',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1Tlcq-9jxPpMziok26R8m_Lnkw4Ao2GBY&sz=w1200',
     featured: true,
   },
   {
@@ -127,29 +127,133 @@ export const THUMBNAILS: any[] = [
     title: 'Movie 4',
     category: 'Movies',
     views: '1M+',
-    imageUrl: 'https://drive.google.com/thumbnail?id=1u9trqbhOz29-B5XAmupPdcF75u6z70q8&sz=w1200',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1IT06bJJJva22aQ-oQTLhZSLwcK--V3wf&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 17,
+    title: 'History 1',
+    category: 'History',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1tSTbqfzkNNMv3BCNFQfn70QtYisMqkzi&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 18,
+    title: 'History 2',
+    category: 'History',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1O1YJFqeZnRwltC-lMmD2Ml2xkcB_tMt3&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 19,
+    title: 'History 3',
+    category: 'History',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1KTuYkOqVUjbQVYrXuCo6KPffjyY1LpoO&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 20,
+    title: 'Finance Insights',
+    category: 'Finance',
+    views: '1.5M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1vDr0-VqbVzfcFPIpJ2IhzTrkDVj2aGYf&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 21,
+    title: 'Other 1',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=193b39BB8F_SVtFstflzu8Ik7ozV33iwl&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 22,
+    title: 'Other 2',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1SprV56c7dIsd8XuB4oSPO2AHF7NlUDVP&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 23,
+    title: 'Other 3',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1Rd1yxBgWBpeGxRHNpAWLW_QmrThKBjwz&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 24,
+    title: 'Other 4',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1xa77nJ1Y2GB27it7_Dl9wINg2kLA3Dk1&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 25,
+    title: 'Other 5',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1ypAo1w6vpK7oBbEp0_WDbJVxejj0xy0b&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 26,
+    title: 'Other 6',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1bhEKsYkFp4gKmlaAzGAWKgAFcY3LJZ62&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 27,
+    title: 'Other 7',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=15dNPe0i4AnIbCpeii-r6IW7LcDIwUIzx&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 28,
+    title: 'Other 8',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1omVwQec6KjV71JknFg_yT-zjcEpXKQOA&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 29,
+    title: 'Other 9',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1N5Q64WXZ-JUhC-90_raWbSwGU1TXanPv&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 30,
+    title: 'Podcast 1',
+    category: 'Podcast',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1NcASuO1kUdUII_5vw0Xw7XTCWO1nIEgS&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 31,
+    title: 'Podcast 2',
+    category: 'Podcast',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1EBL8-HaMyfz3BnfT-VCjbYoIEXRBMChj&sz=w1200',
     featured: true,
   }
 ];
 
-export const CATEGORIES = ['All', 'Documentary', 'Podcast', 'Finance', 'History', 'Movies', 'Royal family', 'Discovery'];
+export const CATEGORIES = ['All', 'Documentary', 'Podcast', 'Finance', 'History', 'Movies', 'Royal family', 'Discovery', 'Others'];
 
-export function useScroll() {
-  const [scrollY, setScrollY] = useState(0);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-      const totalScroll = document.documentElement.scrollTop;
-      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scroll = `${totalScroll / windowHeight}`;
-      setScrollProgress(Number(scroll));
-    };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
-  return { scrollY, scrollProgress };
-}
