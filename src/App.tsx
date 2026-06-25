@@ -13,7 +13,7 @@ import { ImageModal } from './components/ImageModal';
 export default function App() {
   const [activeTab, setActiveTab] = useState('Home');
   const [modalImage, setModalImage] = useState<string | null>(null);
-  
+
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,

@@ -249,10 +249,98 @@ export const THUMBNAILS: any[] = [
     views: '1M+',
     imageUrl: 'https://drive.google.com/thumbnail?id=1EBL8-HaMyfz3BnfT-VCjbYoIEXRBMChj&sz=w1200',
     featured: true,
+  },
+  {
+    id: 32,
+    title: 'Documentary 6',
+    category: 'Documentary',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1VKHL4mdVk6s9yhcW6buTiI6u9SwTWJcs&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 33,
+    title: 'Royal Family 1',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1I2yN7f77Hs9wkrJzdtbA7ZEO6cGz2cEX&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 34,
+    title: 'Royal Family 2',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=15ARMDpZ0P8DiotrEo_XRS_C3t-8mcHLm&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 35,
+    title: 'Royal Family 3',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1dAMTVsL5XTTjqllT4hQwyKxsTZnWQhlr&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 36,
+    title: 'Royal Family 4',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1iy1x4RvZUVoCj2G17usRWdIeQ1ZHTsaE&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 37,
+    title: 'Royal Family 5',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1dqX1q9-y0SQDB5RYhD9llI-AjrnYL1wd&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 38,
+    title: 'Royal Family 6',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1sgrTC21-ibi5YEnIdz8HR85fqm7w8U3C&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 39,
+    title: 'Royal Family 7',
+    category: 'Royal family',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1Rcyt3ZTSQkzGwZoaaH7kr6gfsKQMErkP&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 40,
+    title: 'Other 10',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1YZdJLXG4Vr27tQ65MaJWJzCZtt0MflgA&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 41,
+    title: 'Podcast 10',
+    category: 'Podcast',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1ApYL0ztDSasz2dwI1lEGlqNQzoskLflL&sz=w1200',
+    featured: true,
+  },
+  {
+    id: 42,
+    title: 'Other 11',
+    category: 'Others',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1B80JOMqgCrZP1gjJJTNJHt3_OMCqmP8f&sz=w1200',
+    featured: true,
   }
 ];
 
-export const CATEGORIES = ['All', 'Documentary', 'Podcast', 'Finance', 'History', 'Movies', 'Royal family', 'Discovery', 'Others'];
+export const CATEGORIES = ['All', 'Documentary', 'Podcast', 'Finance', 'History', 'Movies', 'Royal family', 'Others'];
 
 
 
