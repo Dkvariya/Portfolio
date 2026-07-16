@@ -337,6 +337,14 @@ export const THUMBNAILS: any[] = [
     views: '1M+',
     imageUrl: 'https://drive.google.com/thumbnail?id=1B80JOMqgCrZP1gjJJTNJHt3_OMCqmP8f&sz=w1200',
     featured: true,
+  },
+  {
+    id: 43,
+    title: 'Movie 5',
+    category: 'Movies',
+    views: '1M+',
+    imageUrl: 'https://drive.google.com/thumbnail?id=1MuU1rIYLANCJ-7ChXVQxu_NsFZTzp_ZX&sz=w1200',
+    featured: true,
   }
 ];
 
